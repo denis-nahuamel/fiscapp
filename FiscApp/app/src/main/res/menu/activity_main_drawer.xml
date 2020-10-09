@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_incomes"
+            android:icon="@drawable/ic_acta"
+            android:title="ACTAS" />
+        <item
+            android:id="@+id/nav_incidencias"
+            android:icon="@drawable/icon_history"
+            android:title="INCIDENCIAS" />
+
+        <item
+            android:id="@+id/nav_verificar_placa"
+            android:icon="@drawable/ic_placa"
+            android:title="VERIFICAR PLACA" />
+        <item
+            android:id="@+id/nav_verificar"
+            android:icon="@drawable/ic_people"
+            android:title="VERIFICAR PERSONAS" />
+
+        <item
+            android:id="@+id/nav_contenidos"
+            android:icon="@drawable/ic_content"
+            android:title="CONTENIDOS" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icon_setting"
+            android:title="CONFIGURACION" />
+
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_power_button"
+            android:title="SALIR" />
+
+    </group>
+
+    <item android:title="Acerca de Fiscapp">
+        <menu>
+            <item
+                android:id="@+id/nav_creditos"
+                android:icon="@drawable/code"
+                android:title="Creditos" />
+        </menu>
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/outline_rounded"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/update"
+            android:text="Infracciones pasadas"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:textStyle="bold"
+            android:textColor="#120808"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="#24305c">
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvInfracciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tvMensaje_infraccion"
+        android:layout_width="match_parent"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:layout_height="80dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="right"
+        android:layout_marginVertical="5dp"
+
+        >
+
+
+        <Button
+            android:id="@+id/cerrar_infraccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:background="@drawable/boton_importar"
+            android:backgroundTint="#968d8d"
+            android:text="Cerrar" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FiscApp</string>
+    <string name="title_helper">Verificación de ayudante</string>
+    <string name="listado_incidencias">Escoger una incidencia</string>
+
+    <string-array name="incidencia_arrays">
+        <item>Problemas con el trafico</item>
+        <item>Accidente de transito</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>

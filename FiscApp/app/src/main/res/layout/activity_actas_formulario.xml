@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".Model.Actas_formulario"
+        tools:showIn="@layout/activity_actas_formulario">
+
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="REGISTRO DE ACTA"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="Educativa"
+                android:textColor="#fff" />
+
+            <LinearLayout
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/sahapedrawable"
+                android:gravity="center"
+                android:padding="0dp">
+
+                <CheckBox
+                    android:id="@+id/chbeducativa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Modalidad de servicio de transporte"
+                android:textColor="#fff"
+                 />
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="*"
+                android:textColor="#FDDA26"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/facta_tipo_servicio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="tipo de servicio"
+                android:inputType="number"
+                android:padding="5dp"
+
+                android:textColor="#333333" />
+
+            <ImageButton
+
+                android:id="@+id/boActa_tipo_servicio"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sahapedrawable"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Reglamento"
+                android:textColor="#fff"
+                />
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="*"
+                android:textColor="#FDDA26"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/freglamento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:hint="reglamento"
+                android:inputType="text"
+                android:padding="5dp"
+                android:paddingLeft="30dp"
+
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boReglamento"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:padding="17dp"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Tipo de Infraccion"
+                android:textColor="#fff"
+                />
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="*"
+                android:textColor="#FDDA26"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/finfraccion_tipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:hint="tipo de infraccion"
+
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boInfraccion_tipo"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="Placa de rodaje"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Moto"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fvehiculo_placa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="placa de rodaje"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/sahapedrawable"
+                android:gravity="center"
+                android:padding="6dp">
+
+                <CheckBox
+                    android:id="@+id/moto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/validar_infraccion_pasada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/borderojo"
+                android:padding="0dp"
+                android:text="validar" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="Datos del transportista"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Nombre o Razón Social"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fempresa_rsocial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="nombre o razón social"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boRazonSocial"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sahapedrawable"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Domicilio"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fempresa_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="domicilio"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="DNI/RUC"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fempresa_ruc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+
+            android:hint="dni/ruc"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Lugar de intervención"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/finfraccion_via"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="lugar de intervención"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="Datos del conductor"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Tipo de documento de conductor"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                />
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#FDDA26"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fconductor_tipo_documento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="tipo de documento"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boTipo_doc_conductor"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Documento"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fconductor_dni"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="documento"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/boCompletarConductor_cDNI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/borderojo"
+                android:text="validar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Nombres de conductor"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                />
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:text="*"
+                android:textColor="#FDDA26"
+                android:textSize="17dp" />
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/fconductor_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="nombres conductor"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Apellido paterno de conductor"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fconductor_apaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="A paterno conductor"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Apellido materno de conductor"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fconductor_amaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="A materno conductor"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvLicencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Licencia"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fconductor_licencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="licencia"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Tarjeta de Vehiculo"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/ftarjeta_vehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="tarjeta de vehiculo"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvclaseLicencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Clase de licencia : "
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvclaseLicenciaSugerida"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#FDDA26"
+                android:textSize="13dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fconductor_licencia_clase"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="clase"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boClase_licencia"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvCatLicencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Categoria de licencia : "
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tvCatLicenciaSugerida"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=""
+                android:textColor="#FDDA26"
+                android:textSize="13dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fconductor_licencia_categoria"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="categoria"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boCategoria_licencia"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Direccion de conductor"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fconductor_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="direccion conductor"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="ubigeo de conductor"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fconductor_ubigeo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="ubigeo de conductor"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvDatosCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="Datos del cobrador"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/tvTipoDocCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Tipo documento cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/lacbtipodocumento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fcobrador_tipo_documento"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="tipo de documento"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <ImageButton
+                android:id="@+id/boTipo_doc_cobrador"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:src="@drawable/arrowup"
+                android:text="tipo de" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDoctoCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Documento de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/laDocCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/fcobrador_dni"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/dni"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="documento cobrador"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/boCompletarCobrador_cDNI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/borderojo"
+                android:text="validar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNombresCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Nombres de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fcobrador_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="nombres cobrador"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvApCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Apellido paterno de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fcobrador_apaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="A paterno cobrador"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvAmCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Apellido materno de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+
+            android:id="@+id/fcobrador_amaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="A materno cobrador"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvDireccionConductor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Direccion de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fcobrador_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="direccion de cobrador"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tvEdadCobrador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Edad de cobrador"
+            android:textColor="#fff"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/fcobrador_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="edad de cobrador"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="Observaciones"
+            android:textColor="#fff"
+            android:textSize="17dp" />
+        <!--<TextView
+            android:gravity="left"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Observaciones"/>-->
+        <EditText
+            android:id="@+id/facta_observaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/dni"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="observaciones"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boadjuntar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/sahapedrawable"
+                android:drawableLeft="@drawable/photo"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:padding="5dp"
+                android:text="Adjunte una imagen"
+                android:textColor="#333333" />
+
+            <Button
+
+                android:id="@+id/boVerImagen"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sahapedrawable"
+                android:text="VER" />
+        </LinearLayout>
+
+        <!--
+        <TextView
+            android:gravity="left"
+            android:textSize="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="pre impreso"/>
+        <EditText
+            android:id="@+id/facta_impreso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/sahapedrawable"
+            android:drawableLeft="@drawable/iconos"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="acta impreso"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="#333333"
+
+           />-->
+
+
+        <Button
+            android:id="@+id/boGuardarActa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/borderojo"
+            android:padding="5dp"
+            android:text="Guardar acta"
+            android:textColor="#000" />
+    </LinearLayout>
+</ScrollView>

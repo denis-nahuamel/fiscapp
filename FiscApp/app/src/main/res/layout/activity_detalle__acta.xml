@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8EAEE"
+
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@drawable/sahapedrawable"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/detalle_icono"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Detalle del acta"/>
+        <!--#E9EBEE-->
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:id="@+id/dtl_acta_id"
+            android:layout_width="wrap_content"
+            android:text=" id acta"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="4dp"
+            android:paddingLeft="7dp"
+            tools:context=".Detalle_Acta">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:background="#F5F5F7"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Acta Operador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_acta_operador"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Tipo de Infraccion"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_tipo_infraccion"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text=""
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Placa de vehiculo"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_placa"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Via de Infraccion"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_via_infraccion"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Acta Pre impreso"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_acta_preimpreso"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Fecha de registro"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_fecha_registro"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Observaciones"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_acta_observaciones"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Tipo de acta"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_tipo_acta"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Estado de acta"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_estado_acta"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ws vehiculo"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_ws_vehiculo"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ruc empresa"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_ruc_empresa"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Razon social de empresa"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_rsocial"
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Tipo Doc conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_tipo_doc_conductor"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Documento conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_dni_conductor"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Nombres Conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_nombres_conductor"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ap paterno conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_conductor_apaterno"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ap materno conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/dtl_conductor_amaterno"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="clase_licencia"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Licencia conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/dtl_licencia"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="clase_licencia"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="clase_licencia"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_clase_licencia"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Categoria Licencia"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_categoria_licencia"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="direccion conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_direccion_conductor"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ubigeo conductor"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_ubigeo_conductor"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Tipo Doc cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_tipo_doc_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Doc cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_dni_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="nombres cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_nombres_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ap paterno cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_apaterno_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Ap materno cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_amaterno_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:text="Direccion cobrador"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dtl_direccion_cobrador"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="match_parent"
+                            android:text="no,bre del acta"
+                            android:layout_height="wrap_content" />
+
+
+
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

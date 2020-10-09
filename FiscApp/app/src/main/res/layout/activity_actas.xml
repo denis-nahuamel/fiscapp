@@ -1,0 +1,182 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#333"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    >
+
+
+
+    <LinearLayout
+
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/toolbarz"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            >
+            <ImageView
+                android:id="@+id/atras"
+                android:layout_marginLeft="12dp"
+                android:layout_width="32dp"
+                android:padding="5dp"
+                android:src="@drawable/left"
+
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvActa"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="45dp"
+                        android:gravity="center"
+                        android:text="Actas"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/etbusqueda"
+                        app:layout_constraintStart_toStartOf="@+id/etbusqueda"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <com.fiscapp.fiscapp.CustomEditText
+                        android:id="@+id/etbusqueda"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:visibility="invisible"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/sahapedrawable"
+                        android:drawableLeft="@drawable/buscar"
+                        android:drawablePadding="15dp"
+                        android:ems="10"
+                        android:hint="Buscar..."
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:textColor="#333333"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- <ImageButton
+             android:id="@+id/actasLocales"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/sahapedrawable"
+             android:src="@drawable/fondo"
+          />-->
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tab_actas_servidor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:background="@drawable/border_outline_activado"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Servidor" />
+
+            <TextView
+                android:id="@+id/tab_actas_locales"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:textColor="#bdbdbd"
+                android:background="@drawable/border_outline_desactivado"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Locales" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_actas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/cruz"
+        android:tint="#000"
+        android:visibility="visible"
+        app:backgroundTint="#FDDA26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/card_view_personas"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="1dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    android:foreground="?selectableItemBackground"
+    android:clickable="true">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pers_dni"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:text="DNI"/>
+
+                    <TextView
+                        android:id="@+id/pers_nombre"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:text="NOMBRE"/>
+
+
+                    <TextView
+                        android:id="@+id/pers_tema"
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_height="wrap_content"
+                        android:text="TEMA"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

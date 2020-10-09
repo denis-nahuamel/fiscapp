@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarIncidenciaActivity">
+    <LinearLayout
+        android:background="#333"
+        android:orientation="horizontal"
+        android:id="@+id/toolbarz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <ImageView
+            android:id="@+id/atras"
+            android:layout_marginLeft="12dp"
+            android:layout_width="32dp"
+            android:padding="5dp"
+
+            android:src="@drawable/left"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:text="Agregar nueva incidencia"
+            />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            >
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                app:cardBackgroundColor="@color/red_btn_bg_pressed_color"
+                android:layout_marginTop="20dp">
+            <Spinner
+                android:id="@+id/spinner"
+                android:padding="10dp"
+
+                android:layout_width="match_parent"
+
+                android:prompt="@string/listado_incidencias"
+                android:layout_height="match_parent" />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/txtTipoIncidencia"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Tipo de Incidencia"
+                    android:inputType="textPersonName"
+                    />
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/txtTitulo"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Título de la Incidencia"
+                    android:inputType="textPersonName"
+                    />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <EditText
+                    android:id="@+id/txtAgregarDescripcion"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Descripción"
+                    android:inputType="textMultiLine"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintVertical_bias="0.04"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            >
+            <Button
+                android:id="@+id/btnIrMapa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttongray"
+                android:padding="10dp"
+                android:radius="10dp"
+                android:text="Ir al mapa (opcional)"
+                android:textColor="#ffffff"
+
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/btnAgregarIncidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/buttongreen"
+                android:radius="10dp"
+                android:text="Aceptar"
+                android:textColor="#ffffff"
+
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btnCancelarIncidencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/borderemergencia"
+                android:radius="10dp"
+                android:text="Cancelar"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="20dp"
+    android:orientation="vertical"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/outline_rounded"
+    android:maxHeight="@android:dimen/thumbnail_height"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="254dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_close"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="78dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/unknown" />
+
+        <TextView
+            android:id="@+id/txt_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="Nombres"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_nombres"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="12345678"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedor_texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/txt_informacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_gravity="center"
+                android:text="TextView" />
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ids"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/verificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIGENCIA VENCIDA"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ff0400"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

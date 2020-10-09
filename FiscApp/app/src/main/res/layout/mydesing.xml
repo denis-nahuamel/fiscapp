@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mybackground"
+
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEATER"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                />
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_weight="0"
+                android:src="@drawable/plus2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_marginTop="6dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/air"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PANASONIC AC 3P"
+                android:textStyle="bold"
+                android:textColor="#D4D2E5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:background="@drawable/rounded_bg"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET TO"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Hot Noon"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/rounded_bg"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="70dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET TO"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Hot Noon"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/rounded_bg"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SET TO"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Very Hot Noon"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:background="@drawable/rounded_bg"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/air"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INSTALLED HEADER"
+                    android:layout_gravity="center"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#E9EBEE"
+                />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PANASONIC AC 3P"
+                    android:layout_gravity="center"
+
+                    />
+
+                <ImageView
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_gravity="right"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/air"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:background="#E9EBEE"
+                />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+
+
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHARP SHOPISTICATED AC 2P"
+                    android:layout_gravity="center"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:background="#C4C4C4"
+                android:layout_weight="1"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="70dp">
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#C4C4C4"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="70dp">
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

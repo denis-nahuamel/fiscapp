@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:id="@+id/fragment_history_menu_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F5F6F7"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<LinearLayout
+        android:id="@+id/fragment_history_bottom_sheet_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/edit"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="Volver a generar"/>
+    </LinearLayout>-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E9EBEE"
+        />
+    <LinearLayout
+        android:id="@+id/fragment_history_bottom_sheet_delete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/imv_anular_modificar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/trash"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ver_detalle"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="Anular"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_preimpreso1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="Anular"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E9EBEE"
+        />
+    <LinearLayout
+        android:id="@+id/fragment_history_bottom_sheet_detalle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/lista"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="Ver detalle"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_preimpreso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:text="Anular"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E9EBEE"
+        />
+
+    <LinearLayout
+        android:id="@+id/fragment_history_bottom_sheet_imprimir"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="25dp"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/printer2"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:text="Imprimir"/>
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_preimpreso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:text="Anular"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#E9EBEE"
+        />
+
+</LinearLayout>

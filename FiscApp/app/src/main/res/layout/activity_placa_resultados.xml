@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacaResultados">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPlaca"
+        android:layout_width="match_parent"
+
+        android:layout_height="56dp"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_below="@id/toolbarPlaca"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_view2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="12"
+                android:textStyle="bold"
+                android:inputType="textPersonName"
+                android:text="Placa: " />
+            <TextView
+                android:id="@+id/txtPlaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:gravity="left"
+                android:text="" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/cawtr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ezzz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Licencia: " />
+                <TextView
+                    android:id="@+id/txtLicencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/ezvvz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:textStyle="bold"
+                        android:inputType="textPersonName"
+                        android:text="Datos del vehículo " />
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ezzvvz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Carrocería: " />
+                <TextView
+                    android:id="@+id/txtCarroceria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/oez"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Año de Fabricación: " />
+                <TextView
+                    android:id="@+id/txtAñoFabricacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/evvvvvz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Clase: " />
+                <TextView
+                    android:id="@+id/txtClase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/vvz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Marca del Vehículo: " />
+                <TextView
+                    android:id="@+id/txtMarcaVehiculo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ezmmz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Color: " />
+                <TextView
+                    android:id="@+id/txtColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ebbvz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Nro de Motor: " />
+                <TextView
+                    android:id="@+id/txtNroMotor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ezzcpvz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Serie: " />
+                <TextView
+                    android:id="@+id/txtSerie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_view3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Replacado: " />
+                <TextView
+                    android:id="@+id/txtReplacado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_view4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Autorización: " />
+                <TextView
+                    android:id="@+id/txtAutorizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_view5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editText34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Estado de Autorización: " />
+                <TextView
+                    android:id="@+id/txtEstadoAutorizacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_viewqq"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ediztText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Desde: " />
+                <TextView
+                    android:id="@+id/txtFechaDesde"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_viewfv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edizxtText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Hasta: " />
+                <TextView
+                    android:id="@+id/txtFechaHasta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_viewcv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edzxitText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Fecha de Inscripción: " />
+                <TextView
+                    android:id="@+id/txtFechaInscripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vicvew"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editTecnxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Resolución: " />
+                <TextView
+                    android:id="@+id/txtResolucion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_viewuu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editTexmt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Número de certificado: " />
+                <TextView
+                    android:id="@+id/txtNroCertificado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vciew"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Número de expediente: " />
+                <TextView
+                    android:id="@+id/txtNroExpediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vciewb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/editTextv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Fecha de expediente: " />
+                <TextView
+                    android:id="@+id/txtFechaExpediente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vqciewn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edj"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Propietario: " />
+                <TextView
+                    android:id="@+id/txtPropietario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vciewtr"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/lblDireccionPropietario"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:singleLine = "true"
+                    android:textStyle="bold"
+                    android:text="Dirección del propietario: "
+                    android:inputType="textPersonName"
+                    />
+                <TextView
+                    android:id="@+id/txtDireccionPropietario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    android:inputType="textPersonName"
+
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/cardnn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edqxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Nombres de Conductor: " />
+                <TextView
+                    android:id="@+id/txtNombreConductor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="vacío" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/tools"
+            android:id="@+id/card_vci"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardElevation="7dp"
+            card_view:contentPadding="4dp"
+            android:foreground="?selectableItemBackground"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:textStyle="bold"
+                    android:inputType="textPersonName"
+                    android:text="Empresa: " />
+                <TextView
+                    android:id="@+id/txtEmpresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:gravity="left"
+                    android:text="" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

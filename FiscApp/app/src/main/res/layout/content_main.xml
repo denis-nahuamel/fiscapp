@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/sliding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="bottom"
+    tools:context="com.fiscapp.fiscapp.MainActivity"
+
+    app:umanoPanelHeight="60dp"
+    app:umanoShadowHeight="5dp"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="willy.maptest.MainActivity">
+
+        <fragment
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/mapa"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            tools:context="woohgo.com.ubusdriver.MainActivity"
+            map:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            map:layout_constraintRight_toRightOf="parent"
+            map:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            map:layout_constraintLeft_toLeftOf="parent"
+            map:layout_constraintHorizontal_bias="0.0"
+            map:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageButton
+            android:id="@+id/imgbtnMenu"
+            style="@android:style/Widget.ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:background="@drawable/circle_transparent"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_menu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:elevation="6dp"
+            android:id="@+id/position"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/location_rounded"
+            android:clickable="true"
+            android:src="@drawable/current"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="74dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/submenublanco"
+            android:elevation="6dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imgbtnEmergencia"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btnemergencia"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--<ImageButton
+                android:id="@+id/btnVerFiscas"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/team"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <ImageButton
+                android:id="@+id/btnVerIncidentes"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/accident"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:layout_marginEnd="8dp"
+                android:text="Emergencia"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--<TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="122dp"
+                android:layout_marginEnd="5dp"
+                android:text="Ver Inspectores"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />-->
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="189dp"
+                android:layout_marginEnd="12dp"
+                android:text="Incidentes"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:visibility="invisible"
+            android:elevation="5dp"
+            android:id="@+id/counter"
+            android:layout_width="52dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/location_rounded"
+            android:text="00"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAlignment="center"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvInciNovistas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/counter_badget"
+            android:padding="3dp"
+            android:text="0"
+
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:translationZ="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/etLugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="invisible"
+            android:background="@drawable/submenublanco"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:text=""
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        >
+        <TextView
+            android:id="@+id/btnEmergencia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:height="50sp"
+
+
+            android:background="@drawable/borderemergencia"
+            android:gravity="center"
+            android:text="EMERGENCIA"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/circleImageView2"
+            android:layout_width="376dp"
+            android:layout_height="188dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/emer1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/registrarBus"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bordenegro"
+            android:text="LLAMAR"
+
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.038"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btnAbrirModal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bordenegro"
+            android:text="ENVIAR SMS"
+
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.961"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Al pulsar el boton de emergencia durante al menos 3 segundos, ud reportara una emergencia en su posicion actual. se recomienda apretar el boton en algunos casos, como accidentes automovolisticos, robo, asalto o algun incidente de caracter de emergencia"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="Numero de emergencia :"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="45dp"
+            android:text="Numero SMS :"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="80dp"
+            android:text="951116381"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="80dp"
+            android:text="951116381"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ImageView
+            android:id="@+id/direccion"
+            android:layout_width="45dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arriba" />
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
